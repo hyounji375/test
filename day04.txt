@@ -26,17 +26,29 @@ Git 시작하기
 Git 명령어
     1. git init : 프로젝트 내에 로컬(개인 서버) 저장소 생성
     2. git add : 깃에 버전 관리할 파일을 선택(깃에 올릴 파일 선택, stage에 올림)
-    3. git commit -m "커밋함 메시지" : 하나의 버전으로 만들어서 관리(저장)
+                  git add . (변화가 있는 것들은 모두 스테이징)
+    3. git commit -m "커밋함 메시지 내용" : 하나의 버전으로 만들어서 관리(저장).
+                                           업데이트한 주내용을 쓰면 된다.
     4. git remote add origin "깃허브 주소" : 로컬 저장소에 깃허브 주소 설정
     5. git push -u origin master/main : 만든 버전(커밋)을 깃허브에 올리는 것(밀어 넣다)
     6. git pull origin master/main : 깃허브에 업데이트 된 내용을 받는 것(당겨 온다)
     7. git clone : 깃허브에 올라와 있는 다른 파일들 내려받기(맨 처음에 다운받는 것)
+    *  git remote remove origin : remote 해제
+
+터미널 경로 이동 방법
+ : cd 하위폴더 - 하위 폴더로 이동
+   cd.. - 상위 폴더로 이동
 
 Github
  : git으로 버전 관리한 코드를 올릴 수 있는 일종의 클라우드(저장소) 서비스.
    단순히 저장만 하는 것이 아니라 다른 유저들과 함께 코드를 공유하고 
    온라인으로 하나의 프로그램을 같이 제작할 수 있게 만들어 줌.
    https://github.com
+
+Git 에러 해결
+1. Author identity unkonwn
+    git config --global user.email "깃허브 이메일 주소"
+    git config --global user.name "깃허브 이름"
 
 * 노션, slack
 * nomadcoder
