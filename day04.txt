@@ -50,5 +50,6 @@ Git 에러 해결
     git config --global user.email "깃허브 이메일 주소"
     git config --global user.name "깃허브 이름"
 
+소스제어에서 메시지 입력 창에 커밋 내용 적은 후 ... 클릭하고 푸시
 * 노션, slack
 * nomadcoder
